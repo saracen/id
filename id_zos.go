@@ -1,13 +1,13 @@
-// +build zos
+//go:build aix
 
-package machineid
+package id
 
 import (
         "runtime"
         "unsafe"
 )
 
-func machineID() (string, error) {
+func id() (string, error) {
         type sliceHeader struct {
                 addr unsafe.Pointer
                 len  int
