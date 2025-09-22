@@ -1,4 +1,4 @@
-//go:build aix
+//go:build zos
 
 package id
 
